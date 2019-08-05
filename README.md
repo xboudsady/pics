@@ -14,11 +14,12 @@ The `<ImageList />` component will render html image element based on the reques
 
 ## Stuff to Figure Out
 * How do we get feedback from the user?
+  * Using special properties to handle event change
+    * User clicks on somethig -> `onClick`
+    * User changes text in an input -> `onChange`
+    * User submits a form -> `onSubmit`
 * How do we fetch data from some outside API or server?
 * How do we show lists of records?
-
-### How do we get feedback from the user?
-
 
 ## Technology
 * Web Framework - [React](https://reactjs.org/)
