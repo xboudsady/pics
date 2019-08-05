@@ -21,4 +21,5 @@ The `<ImageList />` component will render html image element based on the reques
 
 
 ## Technology
-* React
+* Web Framework - [React](https://reactjs.org/)
+* CSS Framework - [Semantic UI](https://semantic-ui.com/)
