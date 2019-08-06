@@ -14,10 +14,11 @@ The `<ImageList />` component will render html image element based on the reques
 
 ## Stuff to Figure Out
 * How do we get feedback from the user?
-  * Using special properties to handle event change
-    * User clicks on somethig -> `onClick`
-    * User changes text in an input -> `onChange`
-    * User submits a form -> `onSubmit`
+  1. User types in input
+  2. Callback gets invoked
+  3. We call `setState()` with the new value
+  4. Component rerenders
+  5. Input is told what its value is (coming from state)
 * How do we fetch data from some outside API or server?
 * How do we show lists of records?
 
