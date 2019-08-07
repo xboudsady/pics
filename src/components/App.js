@@ -8,9 +8,13 @@ const secretKey = config.secret_key;
 
 
 class App extends React.Component {
+  // create a state to store our network request, initial value is empty array, or object
+  state = { images: [] };
+
+
   // Using the async, await syntax, instead of promise .then()
   // Will pass this down to the <SearchBar /> as a prop
-  async onSearchSubmit(term) {
+  onSearchSubmit = async (term) => {
     // Use Axios to get data
     // 1st argumet is the path, 2nd arguement is an object
     const response = await axios.get(' https://api.unsplash.com/search/photos', {
@@ -22,13 +26,14 @@ class App extends React.Component {
       }
     });
 
-    console.log(response.data.results);
+    this.setState({ images: response.data.results });
   }
 
   render() {
     return (
       <div className="ui container" style={{ marginTop: '10px' }}>
         <SearchBar onSubmit={ this.onSearchSubmit } />
+        Found: { this.state.images.length } images
       </div>
     );
     }
