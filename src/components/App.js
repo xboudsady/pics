@@ -8,12 +8,12 @@ const secretKey = config.secret_key;
 
 
 class App extends React.Component {
-  
+  // Using the async, await syntax, instead of promise .then()
   // Will pass this down to the <SearchBar /> as a prop
-  onSearchSubmit(term) {
+  async onSearchSubmit(term) {
     // Use Axios to get data
     // 1st argumet is the path, 2nd arguement is an object
-    axios.get(' https://api.unsplash.com/search/photos', {
+    const response = await axios.get(' https://api.unsplash.com/search/photos', {
       // Parameters for search query -- from our term 'user input' from state props
       params: { query: term },
       // Header Object
@@ -21,6 +21,8 @@ class App extends React.Component {
         Authorization: 'Client-ID ' + accessKey
       }
     });
+
+    console.log(response.data.results);
   }
 
   render() {
