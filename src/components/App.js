@@ -14,6 +14,8 @@ class App extends React.Component {
     // Use Axios to get data
     // 1st argumet is the path, 2nd arguement is an object
     axios.get(' https://api.unsplash.com/search/photos', {
+      // Parameters for search query -- from our term 'user input' from state props
+      params: { query: term },
       // Header Object
       headers: {
         Authorization: 'Client-ID ' + accessKey
