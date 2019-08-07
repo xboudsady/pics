@@ -1,6 +1,7 @@
 import React from 'react';
 import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
+import ImageList from './ImageList';
 
 class App extends React.Component {
   // create a state to store our network request, initial value is empty array, or object
@@ -23,8 +24,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: '10px' }}>
+        {/* Our Search Bar Component */}
         <SearchBar onSubmit={ this.onSearchSubmit } />
-        Found: { this.state.images.length } images
+        {/* Image result Component */}
+        <ImageList images={ this.state.images } />
       </div>
     );
     }
