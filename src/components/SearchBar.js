@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
     event.preventDefault();
 
     // This is a function from the parent component <App />
-    // We then pass in our state
+    // We then pass in our state propertie
     this.props.onSubmit(this.state.term);
   }
 
