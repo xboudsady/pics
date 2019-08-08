@@ -1,6 +1,6 @@
 # Pics
 
-## Demo Site → [Pics]()
+## Demo Site → [Pics]( http://xboudsady-react-pics.s3-website-us-west-1.amazonaws.com)
 
 The basic app component will consist of 3 components. The `<App />` component will be our parent component, followed by the `<SearchBar />` and `<ImageList />`.
 
@@ -24,7 +24,7 @@ The `<ImageList />` component will render html image element based on the reques
 * CSS Framework - [Semantic UI](https://semantic-ui.com/)
 * Stock Photos - [Unsplash API](https://unsplash.com/developers)
 * AJAX Client - [Axios](https://github.com/axios/axios)
-* Hosted - [AAmazon Web Services](https://https://aws.amazon.com/)
+* Hosted - [Amazon Web Services](https://https://aws.amazon.com/)
 
 ## App Screen Shot
 
