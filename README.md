@@ -1,6 +1,6 @@
 # Pics
 
-## Demo Site → [Pics]( http://xboudsady-react-pics.s3-website-us-west-1.amazonaws.com)
+## Demo Site → [Pics](http://xboudsady-react-pics.s3-website-us-west-1.amazonaws.com)
 
 The basic app component will consist of 3 components. The `<App />` component will be our parent component, followed by the `<SearchBar />` and `<ImageList />`.
 
